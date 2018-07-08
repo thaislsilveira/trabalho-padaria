@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background: #F3F0E8;
+    margin-bottom: 60px;
+    font-family: 'Roboto', sans-serif !important;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background: rgba(142, 77, 41, 1);
+}
+.img-200-200 {
+    width: 200px;
+}
+
+.card {
+    overflow:hidden;
+}
+
+.card-body .rotate {
+    z-index: 8;
+    float: right;
+    height: 100%;
+}
+
+.card-body .rotate i{
+    color: rgba(20, 20, 20, 0.15);
+    position: absolute;
+    left: 0;
+    left: auto;
+    right: -10px;
+    bottom: 0;
+    display: block;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+}
+nav.sidebar{
+    height: calc(100vh - 40px);
+    background-color: #fff;
+
+}
+/** PAINEL DO USUÁRIO */
+.user-panel .user_avatar {
+    margin-right: 10px;
+    width: 60px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.user-panel a{   
+    color: #6ab04c;
+    text-decoration: none;
+}
+
+.user-panel a:active, .user-panel a:focus,.user-panel a:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #6ab04c;
+}
+
+.user-panel .blink {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker{
+    from{opacity:1}
+    to{opacity:.1}
+}
+
+.user-panel .icon-circle{
+    width: 12px;
+    height: 12px;
+    content: '';
+    background: #6ab04c;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.cabecalho.navbar {
+    background: rgba(142, 77, 41, 1);
+}
+.menu a{
+    color: black;
+}
+.menu a:hover{
+    color: #cf5d38 !important;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #cf5d38 !important;
+    border-color: #cf5d38 !important;
+}
+
+.botoes-topo .btn-outline-secondary {
+    color: black;
+    border-color: black;
+}
+.p-geral{
+    text-align: justify;
+}
+.card-footer{
+    background-color: #3F240F !important;
+    color: white;
+}
